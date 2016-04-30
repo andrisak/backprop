@@ -12,9 +12,8 @@ case class HiddenLayer(layerName: String, biasNeuron: BiasNeuron, neurons: List[
 
 case class OutputLayer(layerName: String, biasNeuron: BiasNeuron, neuron: Neuron)
 
-class Network(inputLayerNeuronCount: Int, hiddenLayerNeuronCount: Int, rand: Random) {
+class Network(inputLayerNeuronCount: Int, hiddenLayerNeuronCount: Int, random: Random) {
   private val OUTPUT_LAYER_NEURON_COUNT = 1
-  private val random = rand
 
   // create bias neurons
   private val hiddenBiasNeuron = new BiasNeuron("hiddenLayerBiasNode", random)

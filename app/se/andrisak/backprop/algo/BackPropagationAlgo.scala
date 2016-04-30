@@ -7,12 +7,11 @@ import scala.util.Random
 /**
   * @author andrisak
   */
-class BackPropagationAlgo(rand: Random) {
+class BackPropagationAlgo(random: Random) {
   // controls how much weights are adjusted on each reverse pass
   private val TRAINING_RATE: Double = 0.35
   private val HIDDEN_NEURON_COUNT = 3
   private val INPUT_NEURON_COUNT = 2
-  private val random = rand
   private val MAX_ITERATIONS = 5000
 
   def classify(iterations: Int, trainingData: Seq[TrainingDataItem], inputToClassify: List[Double]): Double = {

@@ -10,10 +10,7 @@ case class ForwardLink(val from: Neuron, val to: Neuron, var weight: Double)
 
 case class ReverseLink(val to: Neuron)
 
-class Neuron(neuronName: String, rand: Random) {
-  private val random = rand
-  private val name = neuronName
-
+class Neuron(neuronName: String, random: Random) {
   // forward connections to nodes in next layer
   var forwardLinks: List[ForwardLink] = List()
   // reverse connections to nodes in previous layer
@@ -83,6 +80,6 @@ class Neuron(neuronName: String, rand: Random) {
   }
 
   override def toString: String = {
-    name
+    neuronName
   }
 }
