@@ -1,6 +1,6 @@
 package se.andrisak.backprop.algo
 
-import se.andrisak.backprop.rest.model.ClassificationRequest.TrainingDataItem
+import se.andrisak.backprop.controller.model.ClassificationRequest.TrainingDataItem
 
 import scala.util.Random
 

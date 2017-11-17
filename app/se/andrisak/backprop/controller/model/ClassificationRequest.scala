@@ -1,4 +1,4 @@
-package se.andrisak.backprop.rest.model
+package se.andrisak.backprop.controller.model
 
 import play.api.libs.functional.syntax._
 import play.api.libs.json.Reads._

@@ -1,19 +1,19 @@
-package se.andrisak.backprop.rest
+package se.andrisak.backprop.controller
 
 import javax.inject.Inject
 
 import play.api.libs.json.{JsError, Json}
 import play.api.mvc._
 import se.andrisak.backprop.algo.BackPropagationAlgo
-import se.andrisak.backprop.rest.model.ClassificationRequest.ClassificationInput
-import se.andrisak.backprop.rest.model.ClassificationResponse.Classification
+import se.andrisak.backprop.controller.model.ClassificationRequest.ClassificationInput
+import se.andrisak.backprop.controller.model.ClassificationResponse.Classification
 
 import scala.util.Random
 
 /**
  * @author andrisak
  */
-class BackPropagationService @Inject()(random: Random) extends Controller {
+class BackPropagationController @Inject()(random: Random) extends Controller {
   def classify = Action(BodyParsers.parse.json) { request =>
     val r = request.body.validate[ClassificationInput]
 

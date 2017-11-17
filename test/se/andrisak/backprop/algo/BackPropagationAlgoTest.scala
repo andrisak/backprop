@@ -3,7 +3,7 @@ package se.andrisak.backprop.algo
 import org.mockito.Mockito._
 import org.scalatest.mock.MockitoSugar
 import org.scalatest.{BeforeAndAfterEach, FunSuite, Matchers}
-import se.andrisak.backprop.rest.model.ClassificationRequest.TrainingDataItem
+import se.andrisak.backprop.controller.model.ClassificationRequest.TrainingDataItem
 
 import scala.util.Random
 
